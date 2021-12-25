@@ -5,6 +5,7 @@
 }
 
 body {
+  margin: 0;
   font-family: "Mulish", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -12,21 +13,26 @@ body {
   line-height: 20px;
 }
 
+
+/**
+ * HEADER
+**/
 .header {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 32px;
-  padding-right: 70px;
   display: flex;
   align-items: center;
+  padding-left: 32px;
+  padding-right: 70px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .menu-button {
-  padding: 0;
-  margin-right: 28px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 0;
+  margin-right: 28px;
   width: 20px;
   height: 17px;
   background-color: #ffffff;
@@ -145,4 +151,74 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 50%;
+}
+
+/**
+ * NAVIGATION MENU
+**/
+.container {
+  max-width: 220px;
+}
+
+.sidebar {
+  padding-left: 32px;
+  width: 100%;
+}
+
+.nav-menu {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 60px;
+  list-style-type: none;
+}
+
+.nav-menu--settings {
+  margin-top: 104px;
+  margin-bottom: 40px;
+}
+
+.nav-item:not(:last-child) {
+  margin-bottom: 28px;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  outline: none;
+}
+
+.nav-link .icon {
+  fill: #898989;
+}
+
+.nav-link:hover .icon,
+.nav-link:focus .icon {
+  fill: #ff0000;
+}
+
+.nav-link:hover .nav-text,
+.nav-link:focus .nav-text {
+  color: #ff0000;
+}
+
+.nav-text {
+  margin-left: 14px;
+  color: #898989;
+}
+
+.nav-image {
+  display: block;
+  width: 26px;
+  height: 26px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.nav-title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 23px;
+  color: #000000;
 }
