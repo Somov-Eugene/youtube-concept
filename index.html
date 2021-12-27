@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap">
-  <link rel="stylesheet" href="css/normlize.css">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -34,6 +34,13 @@
       </button>
     </div>
 
+    <div class="mobile-search">
+      <svg class="icon icon-search" width="19" height="19">
+        <use xlink:href="img/icons.svg#search"></use>
+      </svg>
+    </div>
+    <!-- /.mobile-search -->
+
     <div class="icons">
       <a class="icons-link" href="#">
         <svg class="icon icon-video" width="27" height="20">
@@ -56,6 +63,44 @@
       <img class="user-avatar" src="img/avatar.png" alt="User Avatar" width="40" height="40">
     </a>
   </header>
+
+  <div class="mobile-sidebar">
+    <ul class="nav-menu">
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <svg class="icon icon-home" width="20" height="19">
+            <use xlink:href="img/icons.svg#home"></use>
+          </svg>
+          <span class="nav-text">Home</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <svg class="icon icon-trending" width="16" height="21">
+            <use xlink:href="img/icons.svg#trending"></use>
+          </svg>
+          <span class="nav-text">Trending</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <svg class="icon icon-subscriptions" width="18" height="18">
+            <use xlink:href="img/icons.svg#subscriptions"></use>
+          </svg>
+          <span class="nav-text">Subscriptions</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <svg class="icon icon-library" width="20" height="16">
+            <use xlink:href="img/icons.svg#library"></use>
+          </svg>
+          <span class="nav-text">Library</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <!-- /.mobile-sidebar -->
 
   <div class="container">
     <aside class="sidebar">
@@ -370,9 +415,9 @@
           <div class="swiper-wrapper">
             <!-- Slides -->
             <div class="swiper-slide">
-              <div class="rec-video-card">
-                <div class="rec-video-thumb">
-                  <img class="rec-thumbnail" src="img/recommended-video-1.png" alt="Video: Dude You Re Getting A Telescope">
+              <div class="video-card">
+                <div class="video-thumb">
+                  <img class="thumbnail" src="img/recommended-video-1.png" alt="Video: Dude You Re Getting A Telescope">
                   <span class="video-duration">3:40</span>
                 </div>
                 <h3 class="video-title">Dude You Re Getting A Telescope</h3>
@@ -388,9 +433,9 @@
             <!-- ./swiper-slide -->
 
             <div class="swiper-slide">
-              <div class="rec-video-card">
-                <div class="rec-video-thumb">
-                  <img class="rec-thumbnail" src="img/recommended-video-2.png" alt="Video: Moon Gazing">
+              <div class="video-card">
+                <div class="video-thumb">
+                  <img class="thumbnail" src="img/recommended-video-2.png" alt="Video: Moon Gazing">
                   <span class="video-duration">2:12</span>
                 </div>
                 <h3 class="video-title">Moon Gazing</h3>
@@ -406,9 +451,9 @@
             <!-- ./swiper-slide -->
 
             <div class="swiper-slide">
-              <div class="rec-video-card">
-                <div class="rec-video-thumb">
-                  <img class="rec-thumbnail" src="img/recommended-video-3.png" alt="Video: Moon Gazing">
+              <div class="video-card">
+                <div class="video-thumb">
+                  <img class="thumbnail" src="img/recommended-video-3.png" alt="Video: Moon Gazing">
                   <span class="video-duration">2:12</span>
                 </div>
                 <h3 class="video-title">Moon Gazing</h3>
